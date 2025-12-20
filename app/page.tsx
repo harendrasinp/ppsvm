@@ -18,7 +18,7 @@ export default function Home() {
                 alt="front_image"
                 className="rounded-[5px]" ></Image>
               </div>
-              <button className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[1.5rem]"><Link href="/main_card">OPEN</Link></button>
+              <button className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[1.5rem]"><Link href="/maincard">OPEN</Link></button>
             </div>
 
         </div>
