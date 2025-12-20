@@ -7,12 +7,16 @@ export default function Home() {
 
         <div className="w-full flex flex-col justify-center items-center gap-25">
 
-             <div className="bg-blue-950 w-full h-25">
-
+             <div className="bg-gray-200 w-full h-30 p-5 flex items-center gap-2">
+                <Image src="/Images/logo.png" alt="logo" width={80} height={100}></Image>
+                <div className=" flex flex-col justify-center items-center">
+                  <span className=" flex flex-col text-[1.2rem] font-semibold">P.P SAVANI VIDHYAMANDIR</span>
+                  <span className=" flex flex-col text-[0.6rem]">AT POST KATHGADH VYARA.DIST.TAPI </span>
+                </div>
             </div>
 
             <div className="flex flex-col justify-center items-center gap-5">
-              <div className="relative w-95 h-75">
+              <div className="relative w-95 h-70">
                 <Image src="/Images/frontP_image.jpg" 
                 fill
                 alt="front_image"
