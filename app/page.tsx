@@ -42,7 +42,7 @@ export default function Home() {
               </div>
 {/* ----------------------------Form------------------------------------------------- */}
               <form onSubmit={handleSubmit} action="" className=" flex flex-col gap-2 items-center">
-                  <input type="text" placeholder="Enter you full Name"
+                  <input type="text" placeholder="Enter Your Full Name"
                   value={localName}
                   onChange={(e)=>setLocalName(e.target.value)}
                   className="border-2 border-b-cyan-600 p-1 text-amber-50" />

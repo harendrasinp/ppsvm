@@ -25,7 +25,7 @@ const MainCard = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.5 }}>
       {/* Audio */}
-      <audio ref={audioRef} src="/audio/sound.mp3" />
+      <audio ref={audioRef} src="/audio/toofan.mp3" />
 
       {/* Video */}
       <video
