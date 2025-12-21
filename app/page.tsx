@@ -23,16 +23,16 @@ export default function Home() {
   return (
     <div className="bg-[url('/Images/bg.png')] bg-center bg-cover min-h-screen w-full flex flex-col items-center">
 
-        <div className="w-full flex flex-col justify-center items-center gap-15">
+        <div className="w-full flex flex-col justify-center items-center gap-2">
 
-             <div className="bg-gray-200/40 w-full h-30 p-5 flex items-center gap-2">
+             <div className="bg-gray-200/40 w-full h-25 p-5 flex items-center gap-2">
                 <Image src="/Images/logo.png" alt="logo" width={80} height={100}></Image>
                 <div className=" flex flex-col justify-center items-center">
                   <span className=" flex flex-col text-[1.2rem] font-semibold">P.P SAVANI VIDHYAMANDIR</span>
                   <span className=" flex flex-col text-[0.6rem]">AT POST KATHGADH VYARA.DIST.TAPI </span>
                 </div>
             </div>
-
+            <div className="text-amber-100 cursive-text text-[3rem] font-semibold">invitation</div>
             <div className="flex flex-col justify-center items-center gap-5">
               <div className="relative w-95 h-70">
                 <Image src="/Images/frontP_image.jpg" 
@@ -64,7 +64,7 @@ export default function Home() {
                   </label>
 
                   <button type="submit" 
-                  className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[1.5rem]">open</button>
+                  className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[1.5rem]">OPEN</button>
               </form>
 {/* -------------------------------------------------------------------------------------------- */}
             </div>
