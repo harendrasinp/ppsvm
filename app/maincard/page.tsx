@@ -50,9 +50,22 @@ const MainCard = () => {
 
           <p className="mt-3 text-sm leading-relaxed">
             P. P. Savani Vidya Mandir cordially welcomes you and takes great pleasure
-            in inviting you to our <span className="font-semibold"> Annual Function 2025-2026</span>.
+            in inviting you to our <span className="font-bold"> Annual Function 2025-2026</span>.
           </p>
         </div>
+        <div className=" mt-5 flex flex-col justify-center items-center text-center w-50 h-35 overflow-hidden">
+        <motion.div className="w-50 h-20 text-amber-50"
+          initial={{ y:100}}
+          animate={{ y:-100,}}
+          transition={{ duration:5, repeat: Infinity,ease: "linear",}}>
+            <h3 className="font-bold">Chief Guist</h3>
+             Harendrasinh
+             Antariksh
+             Taara
+             Sneha
+             Swati
+        </motion.div>
+           </div>
     
     </motion.div>
   )
