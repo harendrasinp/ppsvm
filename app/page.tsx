@@ -21,11 +21,12 @@ export default function Home() {
     }
   }
   return (
-    <div className="w-full h-screen flex flex-col items-center">
+    <div className="bg-[url('/Images/bg.jpg')] bg-center bg-contain 
+            w-full h-screen flex flex-col items-center">
 
         <div className="w-full flex flex-col justify-center items-center gap-15">
 
-             <div className="bg-gray-200 w-full h-30 p-5 flex items-center gap-2">
+             <div className="bg-gray-200/40 w-full h-30 p-5 flex items-center gap-2">
                 <Image src="/Images/logo.png" alt="logo" width={80} height={100}></Image>
                 <div className=" flex flex-col justify-center items-center">
                   <span className=" flex flex-col text-[1.2rem] font-semibold">P.P SAVANI VIDHYAMANDIR</span>
