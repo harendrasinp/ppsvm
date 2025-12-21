@@ -10,10 +10,15 @@ export default function Home() {
   const {setName,setGender}=useContext(UserContext)
   const router = useRouter();
   const handleSubmit=(e:React.FormEvent)=>{
-    e.preventDefault()
-    setName(localName)
-    setGender(localGender)
-    router.push("/maincard");
+    if(!localName && !localGender){
+      alert("please Enter name and Gender")
+    }
+    else{
+      e.preventDefault()
+      setName(localName)
+      setGender(localGender)
+      router.push("/maincard");
+    }
   }
   return (
     <div className="w-full h-screen flex flex-col items-center">
