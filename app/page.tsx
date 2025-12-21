@@ -28,8 +28,8 @@ export default function Home() {
              <div className="bg-gray-200/40 w-full h-25 p-5 flex items-center gap-2">
                 <Image src="/Images/logo.png" alt="logo" width={80} height={100}></Image>
                 <div className=" flex flex-col justify-center items-center">
-                  <span className=" flex flex-col text-[1.2rem] font-semibold">P.P SAVANI VIDHYAMANDIR</span>
-                  <span className=" flex flex-col text-[0.6rem]">AT POST KATHGADH VYARA.DIST.TAPI </span>
+                  <span className=" flex flex-col text-[1.2rem] font-semibold text-amber-100">P.P SAVANI VIDHYAMANDIR</span>
+                  <span className=" flex flex-col text-[0.6rem] text-amber-100">AT POST KATHGADH VYARA.DIST.TAPI </span>
                 </div>
             </div>
             <div className="text-amber-100 cursive-text text-[3rem] font-semibold">invitation</div>
