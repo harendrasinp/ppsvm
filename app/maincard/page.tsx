@@ -29,7 +29,7 @@ const MainCard = () => {
 
       {/* 🎥 Video */}
       <video
-        src="/card/bg3.mp4"
+        src="Images/card/bg3.mp4"
         autoPlay
         loop
         muted
