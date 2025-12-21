@@ -3,7 +3,7 @@ import { useContext, useEffect, useRef } from "react"
 import { UserContext } from "@/contextapi/contextAPI"
 import { motion } from "framer-motion"
 import Image from "next/image"
-
+import { guestList } from "@/data/data"
 const MainCard = () => {
   const { name, gender } = useContext(UserContext)
   const prefix = gender === "Male" ? "Mr." : "Ms."
@@ -42,31 +42,34 @@ const MainCard = () => {
         </div>
         <div className="font-semibold text-amber-50">P.P Savani Vidhyamandir</div>
       </div>
-     
-        <div className="relative z-10 text-white text-center mt-6 px-4">
-          <h1 className="text-2xl font-semibold">
-            {prefix} {name},
-          </h1>
 
-          <p className="mt-3 text-sm leading-relaxed">
-            P. P. Savani Vidya Mandir cordially welcomes you and takes great pleasure
-            in inviting you to our <span className="font-bold"> Annual Function 2025-2026</span>.
-          </p>
-        </div>
-        <div className=" mt-5 flex flex-col justify-center items-center text-center w-50 h-35 overflow-hidden">
+      <div className="relative z-10 text-white text-center mt-6 px-4">
+        <h1 className="text-2xl font-semibold">
+          {prefix} {name},
+        </h1>
+
+        <p className="mt-3 text-sm leading-relaxed">
+          P. P. Savani Vidya Mandir cordially welcomes you and takes great pleasure
+          in inviting you to our <span className="font-bold"> Annual Function 2025-2026</span>.
+        </p>
+      </div>
+      <div className=" mt-5 flex flex-col justify-center items-center text-center w-50 h-35 overflow-hidden">
         <motion.div className="w-50 h-20 text-amber-50"
-          initial={{ y:100}}
-          animate={{ y:-100,}}
-          transition={{ duration:5, repeat: Infinity,ease: "linear",}}>
-            <h3 className="font-bold">Chief Guist</h3>
-             Harendrasinh
-             Antariksh
-             Taara
-             Sneha
-             Swati
+          initial={{ y: 100 }}
+          animate={{ y: -100, }}
+          transition={{ duration: 5, repeat: Infinity, ease: "linear", }}>
+          <h3 className="font-bold text-[1.3rem]">
+            {guestList.title}
+          </h3>
+
+          <ul className="list-none text-[1.2rem]">
+            {guestList.list.map((name, index) => (
+              <li key={index}>{name}</li>
+            ))}
+          </ul>
         </motion.div>
-           </div>
-    
+      </div>
+
     </motion.div>
   )
 }
