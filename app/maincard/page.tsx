@@ -6,7 +6,7 @@ import Image from "next/image"
 
 const MainCard = () => {
   const { name, gender } = useContext(UserContext)
-
+  const prefix = gender === "Male" ? "Mr." : "Ms."
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
@@ -40,11 +40,20 @@ const MainCard = () => {
         <div className="relative w-25 h-28">
           <div><Image src="/Images/logo.png" alt="logo" fill></Image></div>
         </div>
-        <div className="font-semibold">P.P Savani Vidhyamandir</div>
+        <div className="font-semibold text-amber-50">P.P Savani Vidhyamandir</div>
       </div>
-      <div className="relative z-10 text-white">
-        <h2>{name}</h2>
-      </div>
+     
+        <div className="relative z-10 text-white text-center mt-6 px-4">
+          <h1 className="text-2xl font-semibold">
+            {prefix} {name},
+          </h1>
+
+          <p className="mt-3 text-sm leading-relaxed">
+            P. P. Savani Vidya Mandir cordially welcomes you and takes great pleasure
+            in inviting you to our<span className="font-semibold">Annual Function 2025-2026</span>.
+          </p>
+        </div>
+    
     </motion.div>
   )
 }
