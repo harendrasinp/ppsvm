@@ -2,6 +2,7 @@
 import { useContext, useEffect, useRef } from "react"
 import { UserContext } from "@/contextapi/contextAPI"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const MainCard = () => {
   const { name, gender } = useContext(UserContext)
@@ -19,15 +20,14 @@ const MainCard = () => {
 
   return (
     <motion.div
-      className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative w-full h-screen flex flex-col items-center  overflow-hidden"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.5 }}
-    >
-      {/* 🎵 Audio */}
+      transition={{ duration: 1.5 }}>
+      {/* Audio */}
       <audio ref={audioRef} src="/audio/sound.mp3" />
 
-      {/* 🎥 Video */}
+      {/* Video */}
       <video
         src="Images/card/bg3.mp4"
         autoPlay
@@ -36,12 +36,14 @@ const MainCard = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />
-
-      <div className="absolute inset-0 bg-black/40" />
-
+      <div className="w-80 h-25 bg-gray-300/40 mt-25 z-25 flex flex-col items-center rounded-[9px]">
+        <div className="relative w-25 h-28">
+          <div><Image src="/Images/logo.png" alt="logo" fill></Image></div>
+        </div>
+        <div className="font-semibold">P.P Savani Vidhyamandir</div>
+      </div>
       <div className="relative z-10 text-white">
         <h2>{name}</h2>
-        <h2>{gender}</h2>
       </div>
     </motion.div>
   )
