@@ -21,8 +21,7 @@ export default function Home() {
     }
   }
   return (
-    <div className="bg-[url('/Images/bg.jpg')] bg-center bg-contain 
-            w-full h-screen flex flex-col items-center">
+    <div className="bg-[url('/Images/bg.png')] bg-center bg-cover min-h-screen w-full flex flex-col items-center">
 
         <div className="w-full flex flex-col justify-center items-center gap-15">
 
@@ -46,22 +45,22 @@ export default function Home() {
                   <input type="text" placeholder="Enter you full Name"
                   value={localName}
                   onChange={(e)=>setLocalName(e.target.value)}
-                  className="border-2 border-b-cyan-600 p-1" />
+                  className="border-2 border-b-cyan-600 p-1 text-amber-50" />
 
-                  <label>Gender</label>
-                  <label>Male
+                  <label className="text-amber-50">Gender</label>
+                  <label className="text-amber-50">Male
                     <input type="radio"
                     value="Male"
                     checked={localGender==="Male"}
                     onChange={(e)=>setLocalGender(e.target.value)}
                     className="border-2 border-b-cyan-600 p-1"/>
                   </label>
-                  <label>Female 
+                  <label className="text-amber-50">Female 
                     <input type="radio" 
                     value="Female"
                     checked={localGender==="Female"}
                     onChange={(e)=>setLocalGender(e.target.value)}
-                    className="border-2 border-b-cyan-600 p-1"/>
+                    className="border-2 border-amber-50 p-1"/>
                   </label>
 
                   <button type="submit" 
