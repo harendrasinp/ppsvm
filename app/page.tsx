@@ -1,7 +1,20 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-
+import { useContext, useState} from "react";
+import { UserContext } from "@/contextapi/contextAPI";
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const[localName,setLocalName]=useState("")
+  const[localGender,setLocalGender]=useState("")
+  const {setName,setGender}=useContext(UserContext)
+  const router = useRouter();
+  const handleSubmit=(e:React.FormEvent)=>{
+    e.preventDefault()
+    setName(localName)
+    setGender(localGender)
+    router.push("/maincard");
+  }
   return (
     <div className="w-full h-screen flex flex-col items-center">
 
@@ -22,20 +35,33 @@ export default function Home() {
                 alt="front_image"
                 className="rounded-[5px]" ></Image>
               </div>
+{/* ----------------------------Form------------------------------------------------- */}
+              <form onSubmit={handleSubmit} action="" className=" flex flex-col gap-2 items-center">
+                  <input type="text" placeholder="Enter you full Name"
+                  value={localName}
+                  onChange={(e)=>setLocalName(e.target.value)}
+                  className="border-2 border-b-cyan-600 p-1" />
 
-              <form action="" className=" flex flex-col gap-2 items-center">
-              <input type="text" placeholder="Enter you full Name" className="border-2 border-b-cyan-600 p-1" />
+                  <label>Gender</label>
+                  <label>Male
+                    <input type="radio"
+                    value="Male"
+                    checked={localGender==="Male"}
+                    onChange={(e)=>setLocalGender(e.target.value)}
+                    className="border-2 border-b-cyan-600 p-1"/>
+                  </label>
+                  <label>Female 
+                    <input type="radio" 
+                    value="Female"
+                    checked={localGender==="Female"}
+                    onChange={(e)=>setLocalGender(e.target.value)}
+                    className="border-2 border-b-cyan-600 p-1"/>
+                  </label>
 
-              <label>Gender</label>
-              <label>Male
-                <input type="radio" name="Male" value="male" className="border-2 border-b-cyan-600 p-1"/>
-              </label>
-              <label>Female 
-                <input type="radio" name="Female" value="female" className="border-2 border-b-cyan-600 p-1"/>
-              </label>
-              
-              <button className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[1.5rem]"><Link href="/maincard">OPEN</Link></button>
+                  <button type="submit" 
+                  className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[1.5rem]">open</button>
               </form>
+{/* -------------------------------------------------------------------------------------------- */}
             </div>
 
         </div>

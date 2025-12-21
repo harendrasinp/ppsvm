@@ -1,11 +1,14 @@
-import React from 'react'
-
-const page = () => {
+"use client"
+import { useContext } from 'react'
+import { UserContext } from '@/contextapi/contextAPI'
+const MainCard = () => {
+  const {name,gender}=useContext(UserContext)
   return (
     <div>
-        <h2>Welcome card</h2>
+      <h2>{name}</h2>
+      <h2>{gender}</h2>
     </div>
   )
 }
 
-export default page
+export default MainCard
