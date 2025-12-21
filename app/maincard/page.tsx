@@ -50,7 +50,7 @@ const MainCard = () => {
 
           <p className="mt-3 text-sm leading-relaxed">
             P. P. Savani Vidya Mandir cordially welcomes you and takes great pleasure
-            in inviting you to our<span className="font-semibold">Annual Function 2025-2026</span>.
+            in inviting you to our <span className="font-semibold"> Annual Function 2025-2026</span>.
           </p>
         </div>
     

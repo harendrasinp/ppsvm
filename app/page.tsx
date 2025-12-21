@@ -10,14 +10,14 @@ export default function Home() {
   const {setName,setGender}=useContext(UserContext)
   const router = useRouter();
   const handleSubmit=(e:React.FormEvent)=>{
-    if(!localName && !localGender){
-      alert("please Enter name and Gender")
-    }
-    else{
+    if(localName&&localGender){
       e.preventDefault()
       setName(localName)
       setGender(localGender)
       router.push("/maincard");
+    }
+    else{
+      alert("please Enter name and Gender")
     }
   }
   return (
