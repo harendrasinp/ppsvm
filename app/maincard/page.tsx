@@ -44,7 +44,7 @@ const MainCard = () => {
       </div>
 
       <div className="relative z-10 text-white text-center mt-6 px-4">
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-2xl font-semibold cursive-text text-amber-200">
           {prefix} {name},
         </h1>
 
