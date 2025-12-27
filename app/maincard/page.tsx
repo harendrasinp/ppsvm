@@ -3,7 +3,7 @@ import { useContext, useEffect, useRef } from "react"
 import { UserContext } from "@/contextapi/contextAPI"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { guestList } from "@/data/data"
+import Footer from "./components/footer"
 const MainCard = () => {
   const { name, gender } = useContext(UserContext)
   const prefix = gender === "Male" ? "Mr." : "Ms."
@@ -65,10 +65,7 @@ const MainCard = () => {
           <div>Katgadh Vyara,Dist.Tapi</div>
         </div>
       </div>
-      <div className="mt-9 text-amber-50 flex flex-col justify-center items-center p-2 z-100 text-[0.6rem]">
-        <div>@ 2025 VayuSoftwares</div>
-        <div>Designed & Developed by VayuSoftwares</div>
-      </div>
+      <Footer />
     </motion.div>
   )
 }
