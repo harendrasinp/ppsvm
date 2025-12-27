@@ -49,7 +49,7 @@ const MainCard = () => {
         </h1>
 
         <p className="mt-2 text-sm text-center text-amber-200">
-          P.P Savani Vidyamandir cordially invites you
+          P.P Savani Vidhyamandir cordially invites you
           to celebrate the Annual Function with us.
           The evening will showcase vibrant cultural performances
           and the remarkable talents of our students.
