@@ -55,11 +55,11 @@ const MainCard = () => {
       </div>
       <div className="z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
         <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
-          <div>Date</div>
-          <div>3-Jan-2026, Friday</div>
+          <div>::Date::</div>
+          <div>3-Jan-2026, Saturday</div>
         </div>
         <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
-          <div>Venue</div>
+          <div>::Venue::</div>
           <div>P.P. Savani Vidhyamandir</div>
           <div>Katgadh Vyara,Dist.Tapi</div>
         </div>
