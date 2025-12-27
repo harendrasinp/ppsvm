@@ -53,23 +53,17 @@ const MainCard = () => {
           in inviting you to our <span className="font-bold"> Annual Function 2025-2026</span>.
         </p>
       </div>
-      <div className=" mt-5 flex flex-col justify-center items-center text-center w-50 h-35 overflow-hidden">
-        <motion.div className="w-50 h-20 text-amber-50"
-          initial={{ y: 100 }}
-          animate={{ y: -100, }}
-          transition={{ duration: 5, repeat: Infinity, ease: "linear", }}>
-          <h3 className="font-bold text-[1.3rem]">
-            {guestList.title}
-          </h3>
-
-          <ul className="list-none text-[1.2rem]">
-            {guestList.list.map((name, index) => (
-              <li key={index}>{name}</li>
-            ))}
-          </ul>
-        </motion.div>
+      <div className="z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
+        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
+          <div>Date</div>
+          <div>3-Jan-2026, Friday</div>
+        </div>
+        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
+          <div>Venue</div>
+          <div>P.P. Savani Vidhyamandir</div>
+          <div>Katgadh Vyara,Dist.Tapi</div>
+        </div>
       </div>
-
     </motion.div>
   )
 }
