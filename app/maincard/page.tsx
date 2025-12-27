@@ -53,13 +53,14 @@ const MainCard = () => {
           in inviting you to our <span className="font-bold"> Annual Function 2025-2026</span>.
         </p>
       </div>
-      <div className="z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
+      <div className="mt-5 z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
         <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
-          <div>::Date::</div>
-          <div>3-Jan-2026, Saturday</div>
+          <div>:: Date ::</div>
+          <div>2,3,4-Jan-2026, Saturday</div>
+          <div>Time: 4:30pm To 9:00 pm</div>
         </div>
         <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
-          <div>::Venue::</div>
+          <div>:: Venue ::</div>
           <div>P.P. Savani Vidhyamandir</div>
           <div>Katgadh Vyara,Dist.Tapi</div>
         </div>
