@@ -58,13 +58,13 @@ const MainCard = () => {
         <p className="font-semibold cursive-text">Annual Function 2025-2026</p>
       </div>
       <div className="mt-5 z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
-        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
-          <div className="cursive-text text-amber-200">:: Date ::</div>
+        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center px-8 rounded-2xl">
+          <div className="cursive-text text-amber-200 text-2xl">:: Date ::</div>
           <div>2,3,4-Jan-2026, Saturday</div>
           <div>Time: 4:30pm To 9:00 pm</div>
         </div>
-        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center p-5 rounded-2xl">
-          <div className="cursive-text text-amber-200">:: Venue ::</div>
+        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center px-8 rounded-2xl">
+          <div className="cursive-text text-amber-200 text-2xl">:: Venue ::</div>
           <div>P.P. Savani Vidhyamandir</div>
           <div>Katgadh Vyara,Dist.Tapi</div>
         </div>
