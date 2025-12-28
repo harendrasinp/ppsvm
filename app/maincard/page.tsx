@@ -39,7 +39,7 @@ const MainCard = () => {
 
       {/* Logo Card */}
       <div className="w-full max-w-[320px] mt-20 bg-gray-300/40 flex flex-col items-center rounded-xl py-3 z-10">
-        <div className="relative w-20 h-20">
+        <div className="relative w-20 h-16">
           <Image src="/Images/logo.png" alt="logo" fill />
         </div>
         <div className="font-semibold text-amber-50 text-center mt-1">
@@ -79,7 +79,7 @@ const MainCard = () => {
           <div className="text-xs">P.P. Savani Vidhyamandir</div>
           <div className="text-xs">Katgadh, Vyara – Dist. Tapi</div>
 
-          <div className="w-full h-35 mt-1 rounded-lg overflow-hidden">
+          <div className="w-full h-30 mt-1 rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.550873808928!2d73.42929867429254!3d21.130464684279506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be078ce451f1b81%3A0xcb2a8caaa4bde2d8!2sP%20P%20Savani%20Vidhyamandir%20-%20Vyara!5e0!3m2!1sen!2sin!4v1766897572254!5m2!1sen!2sin"
               className="w-full h-full border-0"
