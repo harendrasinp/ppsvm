@@ -48,9 +48,9 @@ const MainCard = () => {
           {prefix} {name},
         </h1>
 
-        <div className="mb-10">
+        <div className="mb-5">
           <p className="mt-2 text-sm text-center text-amber-200 font-semibold">
-            You are cordially invited to attend the Annual Function of P. P. Savani Vidhya Mandir.
+            You are cordially invited to attend the Annual Function of P. P. Savani Vidhyamandir.
             Your gracious presence will make the occasion truly special and memorable.
           </p>
           <p className="font-semibold cursive-text">Annual Function 2025-2026</p>
