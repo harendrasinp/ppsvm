@@ -89,10 +89,6 @@ const MainCard = () => {
           </div>
         </div>
       </div>
-
-      {/* Spacer to push footer down */}
-      <div className="grow" />
-
       {/* Footer (ALWAYS VISIBLE) */}
       <div className="relative z-20 w-full">
         <Footer />
