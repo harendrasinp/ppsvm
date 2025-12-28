@@ -49,7 +49,7 @@ const MainCard = () => {
         </h1>
 
         <div className="mb-10">
-          <p className="mt-2 text-sm text-center text-amber-200">
+          <p className="mt-2 text-sm text-center text-amber-200 font-semibold">
             You are cordially invited to attend the Annual Function of P. P. Savani Vidhya Mandir.
             Your gracious presence will make the occasion truly special and memorable.
           </p>
