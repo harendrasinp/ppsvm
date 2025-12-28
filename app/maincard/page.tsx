@@ -48,7 +48,7 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-      <div className="z-10 text-white text-center mt-5 px-4 max-w-90">
+      <div className="z-10 text-white text-center mt-3 px-4 max-w-90">
         <h1 className="text-2xl font-semibold cursive-text text-amber-200">
           {prefix} {name},
         </h1>
