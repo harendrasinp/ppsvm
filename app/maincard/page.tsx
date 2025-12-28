@@ -90,7 +90,7 @@ const MainCard = () => {
         </div>
       </div>
       {/* Footer (ALWAYS VISIBLE) */}
-      <div className="relative z-20 w-full">
+      <div className="relative z-20 w-full mt-1">
         <Footer />
       </div>
     </motion.div>
