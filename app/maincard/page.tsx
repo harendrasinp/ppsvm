@@ -48,14 +48,13 @@ const MainCard = () => {
           {prefix} {name},
         </h1>
 
-        <p className="mt-2 text-sm text-center text-amber-200">
-          P.P Savani Vidhyamandir cordially invites you
-          to celebrate the Annual Function with us.
-          The evening will showcase vibrant cultural performances
-          and the remarkable talents of our students.
-          Your esteemed presence will add grace to the occasion.
-        </p>
-        <p className="font-semibold cursive-text">Annual Function 2025-2026</p>
+        <div className="mb-10">
+          <p className="mt-2 text-sm text-center text-amber-200">
+            You are cordially invited to attend the Annual Function of P. P. Savani Vidhya Mandir.
+            Your gracious presence will make the occasion truly special and memorable.
+          </p>
+          <p className="font-semibold cursive-text">Annual Function 2025-2026</p>
+        </div>
       </div>
       <div className="mt-5 z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
         <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center px-8 rounded-2xl">
@@ -63,10 +62,10 @@ const MainCard = () => {
           <div>2,3,4-Jan-2026, Saturday</div>
           <div>Time: 4:30pm To 9:00 pm</div>
         </div>
-        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center rounded-2xl map-wrappe p-5">
+        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center rounded-2xl map-wrappe p-2">
           <div className="cursive-text text-amber-200 text-2xl">:: Venue ::</div>
-          {/* <div>P.P. Savani Vidhyamandir</div>
-          <div>Katgadh Vyara,Dist.Tapi</div> */}
+          <div className="text-[0.8rem]">P.P. Savani Vidhyamandir</div>
+          <div className="text-[0.8rem]">Katgadh Vyara,Dist.Tapi</div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.550873808928!2d73.42929867429254!3d21.130464684279506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be078ce451f1b81%3A0xcb2a8caaa4bde2d8!2sP%20P%20Savani%20Vidhyamandir%20-%20Vyara!5e0!3m2!1sen!2sin!4v1766897572254!5m2!1sen!2sin"
             width={220}
