@@ -65,8 +65,8 @@ const MainCard = () => {
         </div>
         <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center rounded-2xl map-wrappe p-5">
           <div className="cursive-text text-amber-200 text-2xl">:: Venue ::</div>
-          <div>P.P. Savani Vidhyamandir</div>
-          <div>Katgadh Vyara,Dist.Tapi</div>
+          {/* <div>P.P. Savani Vidhyamandir</div>
+          <div>Katgadh Vyara,Dist.Tapi</div> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.550873808928!2d73.42929867429254!3d21.130464684279506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be078ce451f1b81%3A0xcb2a8caaa4bde2d8!2sP%20P%20Savani%20Vidhyamandir%20-%20Vyara!5e0!3m2!1sen!2sin!4v1766897572254!5m2!1sen!2sin"
             width={220}
