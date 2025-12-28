@@ -4,6 +4,7 @@ import { UserContext } from "@/contextapi/contextAPI"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Footer from "./components/footer"
+
 const MainCard = () => {
   const { name, gender } = useContext(UserContext)
   const prefix = gender === "Male" ? "Mr." : "Ms."
@@ -12,75 +13,92 @@ const MainCard = () => {
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = 0.8
-      audioRef.current.play().catch(() => {
-        console.log("Autoplay blocked")
-      })
+      audioRef.current.play().catch(() => {})
     }
   }, [])
 
   return (
     <motion.div
-      className="relative w-full h-screen flex flex-col items-center  overflow-hidden"
-      initial={{ y: -100, opacity: 0 }}
+      className="relative w-full min-h-screen flex flex-col items-center overflow-x-hidden overflow-y-auto"
+      initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.5 }}>
+      transition={{ duration: 1.2 }}
+    >
       {/* Audio */}
       <audio ref={audioRef} src="/audio/toofan.mp3" />
 
-      {/* Video */}
+      {/* Background Video */}
       <video
-        src="Images/card/bg3.mp4"
+        src="/Images/card/bg3.mp4"
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
       />
-      <div className="w-80 h-25 bg-gray-300/40 mt-25 z-25 flex flex-col items-center rounded-[9px]">
-        <div className="relative w-25 h-28">
-          <div><Image src="/Images/logo.png" alt="logo" fill></Image></div>
+
+      {/* Logo Card */}
+      <div className="w-full max-w-[320px] mt-20 bg-gray-300/40 flex flex-col items-center rounded-xl py-3 z-10">
+        <div className="relative w-20 h-20">
+          <Image src="/Images/logo.png" alt="logo" fill />
         </div>
-        <div className="font-semibold text-amber-50">P.P Savani Vidhyamandir</div>
+        <div className="font-semibold text-amber-50 text-center mt-1">
+          P.P. Savani Vidhyamandir
+        </div>
       </div>
 
-      <div className="relative z-10 text-white text-center mt-6 px-4">
+      {/* Invitation Text */}
+      <div className="z-10 text-white text-center mt-5 px-4 max-w-90">
         <h1 className="text-2xl font-semibold cursive-text text-amber-200">
           {prefix} {name},
         </h1>
 
-        <div className="mb-5">
-          <p className="mt-2 text-sm text-center text-amber-200 font-semibold">
-            You are cordially invited to attend the Annual Function of P. P. Savani Vidhyamandir.
-            Your gracious presence will make the occasion truly special and memorable.
-          </p>
-          <p className="font-semibold cursive-text">Annual Function 2025-2026</p>
+        <p className="mt-2 text-sm text-amber-200 font-semibold">
+          You are cordially invited to attend the Annual Function of
+          P. P. Savani Vidhyamandir. Your gracious presence will make
+          the occasion truly special and memorable.
+        </p>
+
+        <p className="mt-2 font-semibold cursive-text">
+          Annual Function 2025–2026
+        </p>
+      </div>
+
+      {/* Info Cards */}
+      <div className="mt-2 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
+        {/* Date Card */}
+        <div className="bg-cyan-950/60 text-amber-50 rounded-2xl py-3 text-center">
+          <div className="cursive-text text-amber-200 text-xl">:: Date ::</div>
+          <div className="text-sm">2, 3, 4 Jan 2026 (Saturday)</div>
+          <div className="text-sm">4:30 PM – 9:00 PM</div>
+        </div>
+
+        {/* Venue Card */}
+        <div className="bg-cyan-950/60 text-amber-50 rounded-2xl p-3 text-center">
+          <div className="cursive-text text-amber-200 text-xl">:: Venue ::</div>
+          <div className="text-xs">P.P. Savani Vidhyamandir</div>
+          <div className="text-xs">Katgadh, Vyara – Dist. Tapi</div>
+
+          <div className="w-full h-35 mt-1 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.550873808928!2d73.42929867429254!3d21.130464684279506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be078ce451f1b81%3A0xcb2a8caaa4bde2d8!2sP%20P%20Savani%20Vidhyamandir%20-%20Vyara!5e0!3m2!1sen!2sin!4v1766897572254!5m2!1sen!2sin"
+              className="w-full h-full border-0"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
-      <div className="mt-5 z-100  w-80 h-60 flex flex-col justify-center items-center gap-5">
-        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center px-8 rounded-2xl">
-          <div className="cursive-text text-amber-200 text-2xl">:: Date ::</div>
-          <div>2,3,4-Jan-2026, Saturday</div>
-          <div>Time: 4:30pm To 9:00 pm</div>
-        </div>
-        <div className="bg-cyan-950/60 text-amber-50 flex flex-col justify-center items-center rounded-2xl map-wrappe p-2">
-          <div className="cursive-text text-amber-200 text-2xl">:: Venue ::</div>
-          <div className="text-[0.8rem]">P.P. Savani Vidhyamandir</div>
-          <div className="text-[0.8rem]">Katgadh Vyara,Dist.Tapi</div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.550873808928!2d73.42929867429254!3d21.130464684279506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be078ce451f1b81%3A0xcb2a8caaa4bde2d8!2sP%20P%20Savani%20Vidhyamandir%20-%20Vyara!5e0!3m2!1sen!2sin!4v1766897572254!5m2!1sen!2sin"
-            width={220}
-            height={100}
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+
+      {/* Spacer to push footer down */}
+      <div className="grow" />
+
+      {/* Footer (ALWAYS VISIBLE) */}
+      <div className="relative z-20 w-full">
+        <Footer />
       </div>
-      <Footer />
     </motion.div>
   )
 }
 
 export default MainCard
-
