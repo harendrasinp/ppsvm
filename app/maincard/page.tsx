@@ -48,26 +48,32 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-      <div className="relative mt-1 w-105 h-65
-  bg-[url('/Images/card/letter.png')] bg-center bg-cover
-  flex items-center justify-center px-15">
+      <div className="relative w-full h-47 mt-4 px-4">
+        {/* Background Image */}
+        <Image
+          src="/images/card/letter2.png"
+          alt="Banner"
+          fill
+          priority
+        />
 
-        <div className="text-center -mt-7">
-          <h1 className="text-2xl font-semibold cursive-text text-amber-800">
+        {/* Overlay Text */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-2xl font-semibold cursive-text text-amber-200">
             {prefix} {name},
           </h1>
 
-          <p className=" text-sm font-semibold text-amber-800">
+          <p className="mt-1 text-sm font-semibold text-amber-200 px-6">
             You are cordially invited to attend the Annual Function of
-            P.P.Savani Vidhyamandir.Your gracious presence will make
+            P. P. Savani Vidhyamandir. Your gracious presence will make
             the occasion truly special and memorable.
-            <b className="block mt-1">Annual Function 2025–2026</b>
+            <b className="block mt-1 text-amber-200">
+              Annual Function 2025–2026
+            </b>
           </p>
-
-
         </div>
-
       </div>
+
 
 
       {/* Info Cards */}
