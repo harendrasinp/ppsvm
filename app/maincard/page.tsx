@@ -64,23 +64,23 @@ const MainCard = () => {
 
         {/* Text */}
         <motion.div
-          className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+          className="absolute inset-0 flex flex-col items-center justify-center text-center px-5"
           initial={{ opacity: 0, y:0}}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
         // delay ensures text appears after image starts opening
         >
-          <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-2">
+          <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-1">
             {prefix} {name},
           </h1>
 
-          <p className="mt-1 text-sm font-semibold text-amber-100 cursive-text">
+          <p className="mt-1 text-sm font-semibold text-amber-200 cursive-text">
             You are cordially invited to attend the Annual Function of
             P. P. Savani Vidhyamandir. Your gracious presence will make
             the occasion truly special and memorable.
           </p>
 
-          <b className="block mt-1 text-amber-100 cursive-text">
+          <b className="block mt-1 text-amber-200 cursive-text">
             Annual Function 2025–2026
           </b>
         </motion.div>
