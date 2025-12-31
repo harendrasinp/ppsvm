@@ -74,7 +74,7 @@ const MainCard = () => {
             {prefix} {name},
           </h1>
 
-          <p className="mt-1 text-sm font-semibold text-amber-200 ">
+          <p className="mt-1 text-sm font-semibold text-amber-200 px-5 ">
             You are cordially invited to attend the Annual Function of
             P. P. Savani Vidhyamandir. Your gracious presence will make
             the occasion truly special and memorable.
