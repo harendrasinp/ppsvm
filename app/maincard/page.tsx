@@ -48,7 +48,24 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-      <div className="relative w-full h-48">
+      {/* <div className="relative w-full h-48"> */}
+        <motion.div
+      initial={{
+        height: 0,
+        opacity: 0,
+        y: -50,
+      }}
+      animate={{
+        height: "12rem", // h-48 = 12rem
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 10, // 🔥 10 seconds
+        ease: "easeInOut",
+      }}
+      className="relative w-full overflow-hidden"
+    >
         {/* Background Image */}
         <Image
           src="/Images/card/letter2.png"
@@ -73,7 +90,7 @@ const MainCard = () => {
             </b>
           </p>
         </div>
-      </div>
+      </motion.div>
 
 
 
