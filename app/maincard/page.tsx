@@ -49,9 +49,9 @@ const MainCard = () => {
 
       {/* Invitation Text */}
       <motion.div
-        className="relative w-full overflow-hidden"
+        className="relative w-full overflow-hidden h-80"
         initial={{ height: 0 }}
-        animate={{ height:200 }} // 12rem h-48
+        animate={{ height:220 }} // 12rem h-48
         transition={{ duration: 2, ease: "easeInOut" }} // image open in 2 sec
       >
         {/* Background Image */}
@@ -89,7 +89,7 @@ const MainCard = () => {
 
 
       {/* Info Cards */}
-      <div className="mt-1 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
+      <div className="w-full max-w-90 flex flex-col gap-2 px-4 z-10">
         {/* Date Card */}
         <div className="bg-cyan-950/60 text-amber-50 rounded-2xl py-1 text-center">
           <div className="cursive-text text-amber-200 text-[1.6rem]">:: Date ::</div>
@@ -103,7 +103,7 @@ const MainCard = () => {
           <div className="text-xs">P.P. Savani Vidhyamandir</div>
           <div className="text-xs">Katgadh, Vyara – Dist. Tapi</div>
 
-          <div className="w-full h-30 mt-1 rounded-lg overflow-hidden">
+          <div className="w-full h-30 rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.550873808928!2d73.42929867429254!3d21.130464684279506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be078ce451f1b81%3A0xcb2a8caaa4bde2d8!2sP%20P%20Savani%20Vidhyamandir%20-%20Vyara!5e0!3m2!1sen!2sin!4v1766897572254!5m2!1sen!2sin"
               className="w-full h-full border-0"
