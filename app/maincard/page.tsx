@@ -78,7 +78,7 @@ const MainCard = () => {
 
 
       {/* Info Cards */}
-      <div className="mt-2 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
+      <div className="mt-1 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
         {/* Date Card */}
         <div className="bg-cyan-950/60 text-amber-50 rounded-2xl py-1 text-center">
           <div className="cursive-text text-amber-200 text-[1.6rem]">:: Date ::</div>
