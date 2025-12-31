@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div className="text-amber-100 cursive-text text-[3rem] font-semibold">invitation</div>
             <div className="flex flex-col justify-center items-center gap-5">
-              <div className="relative w-95 h-70">
+              <div className="relative w-95 h-70 shadow-2xl shadow-amber-50">
                 <Image src="/Images/frontP_image.jpg" 
                 fill
                 alt="front_image"
