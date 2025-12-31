@@ -48,39 +48,42 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-    <motion.div
-      initial={{ height: 0 }}
-      animate={{ height: "12rem" }} // h-48
-      transition={{ duration: 10, ease: "easeInOut" }}
+      <motion.div
       className="relative w-full overflow-hidden"
+      initial={{ height: 0 }}
+      animate={{ height: 192 }} // 12rem h-48 ke liye
+      transition={{ duration: 10, ease: "easeInOut" }}
     >
-        {/* Background Image */}
-        <Image
-          src="/Images/card/letter2.png"
-          alt="Banner"
-          fill
-          sizes="100vw"
-          priority
-        />
+      {/* Image */}
+      <Image
+        src="/Images/card/letter2.png"
+        alt="Banner"
+        fill
+        // style={{ objectFit: "cover" }}
+        priority
+      />
 
-        {/* Overlay Text */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-2xl font-semibold cursive-text text-amber-200">
-            {prefix} {name},
-          </h1>
+      {/* Text inside motion.div */}
+      <motion.div
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 10, ease: "easeInOut" }}
+      >
+        <h1 className="text-2xl font-semibold cursive-text text-amber-200">
+          {prefix} {name},
+        </h1>
 
-          <p className="mt-1 text-sm font-semibold text-amber-200 px-6">
-            You are cordially invited to attend the Annual Function of
-            P. P. Savani Vidhyamandir. Your gracious presence will make
-            the occasion truly special and memorable.
-            <b className="block mt-1 text-amber-200">
-              Annual Function 2025–2026
-            </b>
-          </p>
-        </div>
+        <p className="mt-1 text-sm font-semibold text-amber-200 px-6">
+          You are cordially invited to attend the Annual Function of
+          P. P. Savani Vidhyamandir. Your gracious presence will make
+          the occasion truly special and memorable.
+          <b className="block mt-1 text-amber-200">
+            Annual Function 2025–2026
+          </b>
+        </p>
       </motion.div>
-
-
+    </motion.div>
 
       {/* Info Cards */}
       <div className="mt-1 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
