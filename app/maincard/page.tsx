@@ -13,7 +13,7 @@ const MainCard = () => {
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = 0.8
-      audioRef.current.play().catch(() => {})
+      audioRef.current.play().catch(() => { })
     }
   }, [])
 
@@ -48,21 +48,27 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-      <div className="z-10 text-white text-center mt-3 px-4 max-w-90">
-        <h1 className="text-2xl font-semibold cursive-text text-amber-200">
-          {prefix} {name},
-        </h1>
+      <div className="relative mt-1 w-105 h-65
+  bg-[url('/Images/card/letter.png')] bg-center bg-cover
+  flex items-center justify-center px-15">
 
-        <p className="mt-2 text-sm text-amber-200 font-semibold">
-          You are cordially invited to attend the Annual Function of
-          P. P. Savani Vidhyamandir. Your gracious presence will make
-          the occasion truly special and memorable.
-        </p>
+        <div className="text-center -mt-7">
+          <h1 className="text-2xl font-semibold cursive-text text-amber-800">
+            {prefix} {name},
+          </h1>
 
-        <p className="mt-2 font-semibold cursive-text">
-          Annual Function 2025–2026
-        </p>
+          <p className=" text-sm font-semibold text-amber-800">
+            You are cordially invited to attend the Annual Function of
+            P.P.Savani Vidhyamandir.Your gracious presence will make
+            the occasion truly special and memorable.
+            <b className="block mt-1">Annual Function 2025–2026</b>
+          </p>
+
+
+        </div>
+
       </div>
+
 
       {/* Info Cards */}
       <div className="mt-2 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
