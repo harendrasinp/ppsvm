@@ -51,7 +51,7 @@ const MainCard = () => {
       <motion.div
         className="relative w-full overflow-hidden"
         initial={{ height: 0 }}
-        animate={{ height: 192 }} // 12rem h-48
+        animate={{ height: 195 }} // 12rem h-48
         transition={{ duration: 2, ease: "easeInOut" }} // image open in 2 sec
       >
         {/* Background Image */}
@@ -80,7 +80,7 @@ const MainCard = () => {
             the occasion truly special and memorable.
           </p>
 
-          <b className="block mt-1 text-yellow-950 cursive-text">
+          <b className="block mt-1 text-amber-100 cursive-text">
             Annual Function 2025–2026
           </b>
         </motion.div>
