@@ -48,13 +48,13 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-      <motion.div
+     <motion.div
       className="relative w-full overflow-hidden"
       initial={{ height: 0 }}
-      animate={{ height: 192 }} // 12rem h-48 ke liye
-      transition={{ duration: 10, ease: "easeInOut" }}
+      animate={{ height: 192 }} // 12rem h-48
+      transition={{ duration: 2, ease: "easeInOut" }} // image open in 2 sec
     >
-      {/* Image */}
+      {/* Background Image */}
       <Image
         src="/Images/card/letter2.png"
         alt="Banner"
@@ -63,14 +63,15 @@ const MainCard = () => {
         priority
       />
 
-      {/* Text inside motion.div */}
+      {/* Text */}
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 overflow-hidden"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 10, ease: "easeInOut" }}
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.2, ease: "easeOut" }} 
+        // delay ensures text appears after image starts opening
       >
-        <h1 className="text-2xl font-semibold cursive-text text-amber-200">
+        <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-2">
           {prefix} {name},
         </h1>
 
@@ -78,10 +79,11 @@ const MainCard = () => {
           You are cordially invited to attend the Annual Function of
           P. P. Savani Vidhyamandir. Your gracious presence will make
           the occasion truly special and memorable.
-          <b className="block mt-1 text-amber-200">
-            Annual Function 2025–2026
-          </b>
         </p>
+
+        <b className="block mt-1 text-amber-200">
+          Annual Function 2025–2026
+        </b>
       </motion.div>
     </motion.div>
 
