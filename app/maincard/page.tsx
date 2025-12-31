@@ -54,7 +54,7 @@ const MainCard = () => {
           src="/images/card/letter2.png"
           alt="Banner"
           fill
-          className="cover"
+          sizes="100vw"
           priority
         />
 
