@@ -38,7 +38,7 @@ const MainCard = () => {
       />
 
       {/* Logo Card */}
-      <div className="w-full max-w-[320px] mt-16 bg-gray-300/40 flex flex-col items-center rounded-xl py-2 z-10">
+      <div className="w-full max-w-[320px] mt-15 bg-gray-300/40 flex flex-col items-center rounded-xl py-2 z-10">
         <div className="relative w-25 h-20">
           <Image src="/Images/logo.png" alt="logo" fill />
         </div>
