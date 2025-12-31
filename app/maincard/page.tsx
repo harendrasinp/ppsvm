@@ -38,11 +38,11 @@ const MainCard = () => {
       />
 
       {/* Logo Card */}
-      <div className="w-full max-w-[320px] mt-18 bg-gray-300/40 flex flex-col items-center rounded-xl py-3 z-10">
-        <div className="relative w-20 h-16">
+      <div className="w-full max-w-[320px] mt-18 bg-gray-300/40 flex flex-col items-center rounded-xl py-2 z-10">
+        <div className="relative w-25 h-20">
           <Image src="/Images/logo.png" alt="logo" fill />
         </div>
-        <div className="font-semibold text-amber-50 text-center mt-1">
+        <div className="font-semibold text-amber-50 text-center mt-1 text-[1.2rem]">
           P.P. Savani Vidhyamandir
         </div>
       </div>
@@ -67,15 +67,15 @@ const MainCard = () => {
       {/* Info Cards */}
       <div className="mt-2 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
         {/* Date Card */}
-        <div className="bg-cyan-950/60 text-amber-50 rounded-2xl py-3 text-center">
-          <div className="cursive-text text-amber-200 text-xl">:: Date ::</div>
+        <div className="bg-cyan-950/60 text-amber-50 rounded-2xl py-1 text-center">
+          <div className="cursive-text text-amber-200 text-[1.6rem]">:: Date ::</div>
           <div className="text-sm">2, 3, 4 Jan 2026 (Saturday)</div>
           <div className="text-sm">4:30 PM – 9:00 PM</div>
         </div>
 
         {/* Venue Card */}
-        <div className="bg-cyan-950/60 text-amber-50 rounded-2xl p-3 text-center">
-          <div className="cursive-text text-amber-200 text-xl">:: Venue ::</div>
+        <div className="bg-cyan-950/60 text-amber-50 rounded-2xl p-1 text-center">
+          <div className="cursive-text text-amber-200 text-[1.6rem]">:: Venue ::</div>
           <div className="text-xs">P.P. Savani Vidhyamandir</div>
           <div className="text-xs">Katgadh, Vyara – Dist. Tapi</div>
 
