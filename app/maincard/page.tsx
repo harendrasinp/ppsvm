@@ -70,11 +70,11 @@ const MainCard = () => {
           transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
         // delay ensures text appears after image starts opening
         >
-          <h1 className="text-2xl font-semibold text-amber-200 mb-1">
+          <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-1">
             {prefix} {name},
           </h1>
 
-          <p className="mt-1 text-sm font-semibold text-amber-200 cursive-text">
+          <p className="mt-1 text-sm font-semibold text-amber-200 ">
             You are cordially invited to attend the Annual Function of
             P. P. Savani Vidhyamandir. Your gracious presence will make
             the occasion truly special and memorable.
