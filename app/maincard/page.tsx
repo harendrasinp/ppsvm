@@ -80,7 +80,7 @@ const MainCard = () => {
             the occasion truly special and memorable.
           </p>
 
-          <b className="block mt-1 text-amber-200">
+          <b className="block mt-1 text-yellow-950 cursive-text">
             Annual Function 2025–2026
           </b>
         </motion.div>
