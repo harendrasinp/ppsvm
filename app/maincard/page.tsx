@@ -51,7 +51,7 @@ const MainCard = () => {
       <div className="relative w-full h-48">
         {/* Background Image */}
         <Image
-          src="/images/card/letter2.png"
+          src="/Images/card/letter2.png"
           alt="Banner"
           fill
           sizes="100vw"
