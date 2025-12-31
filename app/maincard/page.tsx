@@ -48,44 +48,45 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-     <motion.div
-      className="relative w-full overflow-hidden"
-      initial={{ height: 0 }}
-      animate={{ height: 192 }} // 12rem h-48
-      transition={{ duration: 2, ease: "easeInOut" }} // image open in 2 sec
-    >
-      {/* Background Image */}
-      <Image
-        src="/Images/card/letter2.png"
-        alt="Banner"
-        fill
-        // style={{ objectFit: "cover" }}
-        priority
-      />
-
-      {/* Text */}
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.2, ease: "easeOut" }} 
-        // delay ensures text appears after image starts opening
+        className="relative w-full overflow-hidden"
+        initial={{ height: 0 }}
+        animate={{ height: 192 }} // 12rem h-48
+        transition={{ duration: 2, ease: "easeInOut" }} // image open in 2 sec
       >
-        <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-2">
-          {prefix} {name},
-        </h1>
+        {/* Background Image */}
+        <Image
+          src="/Images/card/letter2.png"
+          alt="Banner"
+          fill
+          priority
+        />
 
-        <p className="mt-1 text-sm font-semibold text-amber-200 px-6">
-          You are cordially invited to attend the Annual Function of
-          P. P. Savani Vidhyamandir. Your gracious presence will make
-          the occasion truly special and memorable.
-        </p>
+        {/* Text */}
+        <motion.div
+          className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+          initial={{ opacity: 0, y:0}}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
+        // delay ensures text appears after image starts opening
+        >
+          <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-2">
+            {prefix} {name},
+          </h1>
 
-        <b className="block mt-1 text-amber-200">
-          Annual Function 2025–2026
-        </b>
+          <p className="mt-1 text-sm font-semibold text-amber-200 px-6">
+            You are cordially invited to attend the Annual Function of
+            P. P. Savani Vidhyamandir. Your gracious presence will make
+            the occasion truly special and memorable.
+          </p>
+
+          <b className="block mt-1 text-amber-200">
+            Annual Function 2025–2026
+          </b>
+        </motion.div>
       </motion.div>
-    </motion.div>
+
+
 
       {/* Info Cards */}
       <div className="mt-1 w-full max-w-90 flex flex-col gap-4 px-4 z-10">
