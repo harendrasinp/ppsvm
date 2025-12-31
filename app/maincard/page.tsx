@@ -67,7 +67,7 @@ const MainCard = () => {
           className="absolute inset-0 flex flex-col items-center justify-center text-center px-5"
           initial={{ opacity: 0, y:0}}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
+          transition={{ duration: 2, delay: 0.9, ease: "easeOut" }}
         // delay ensures text appears after image starts opening
         >
           <h1 className="text-2xl font-semibold cursive-text text-amber-200 mb-1">
