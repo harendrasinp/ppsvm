@@ -48,7 +48,7 @@ const MainCard = () => {
       </div>
 
       {/* Invitation Text */}
-      <div className="relative w-full h-48 mt-4 px-4">
+      <div className="relative w-full h-40">
         {/* Background Image */}
         <Image
           src="/images/card/letter2.png"
