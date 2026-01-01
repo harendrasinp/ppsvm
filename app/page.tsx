@@ -45,7 +45,7 @@ export default function Home() {
                   <input type="text" placeholder="Enter Your Full Name"
                   value={localName}
                   onChange={(e)=>setLocalName(e.target.value)}
-                  className="border-2 border-b-cyan-600 p-1 text-amber-50" />
+                  className="border-2 border-b-cyan-600 p-1 text-amber-50 placeholder:text-amber-50 rounded-[0.4rem]" />
 
                   <label className="text-amber-50">Gender</label>
                   <label className="text-amber-50">Male
