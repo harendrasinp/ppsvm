@@ -64,7 +64,7 @@ export default function Home() {
                   </label>
 
                   <button type="submit" 
-                  className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[0.8rem] shadow-2xl shadow-amber-100">Click to Open Invitation</button>
+                  className="w-35 bg-amber-700 px-5 rounded-[7px] text-amber-50 text-[0.9rem] shadow-2xl shadow-amber-100">Click to Open Invitation</button>
               </form>
 {/* -------------------------------------------------------------------------------------------- */}
             </div>
