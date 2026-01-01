@@ -93,8 +93,8 @@ const MainCard = () => {
         {/* Date Card */}
         <div className="bg-cyan-950/60 text-amber-50 rounded-2xl py-1 text-center">
           <div className="cursive-text text-amber-200 text-[1.6rem]">:: Date ::</div>
-          <div className="text-sm">2, 3, 4 Jan 2026 (Saturday)</div>
-          <div className="text-sm">4:30 PM – 9:00 PM</div>
+          <div className="text-sm">2nd,3rd & 4th January 2026 </div>
+          <div className="text-sm">4:30 PM Onwards</div>
         </div>
 
         {/* Venue Card */}
